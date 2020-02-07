@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Manipulando elementos html</title>
+		<meta charset="utf-8">
+	</head>
+	<script type="text/javascript">
+		//funcao para alterar a cor de background da div
+		function changeColor(change, L, A){
+			//acessando elemento de estilo mais especificamente o background e atribuindo os valores do button 
+			document.getElementById('caixa').style.background = change
+			document.getElementById('caixa').style.width = L
+			document.getElementById('caixa').style.height = A
+		}
+	</script>
+
+	<body>	
+		<h3>Manipulando elementos html</h3>
+
+		<button onclick="changeColor('#FF0000', '500px')">Vermelho</button>
+		<button onclick="changeColor('#0000FF', '300px', '500px')">Azul</button>
+		<button onclick="changeColor('#00FF00' , '200px','800px')">Verde</button>
+
+		<hr>
+
+		<div style="height: 100px; width: 100px; border: 1px solid" id="caixa"></div>
+	</body>
+	</html>

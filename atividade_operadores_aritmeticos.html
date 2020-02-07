@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Atividade de fixação IMC</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script type="text/javascript">
+			var nome = prompt('Digite o seu nome')
+			var centimetros = prompt('Digite sua altura em centimetros')
+			var peso = prompt('Digite o seu peso')
+
+			
+			centimetros = parseFloat(centimetros)
+			peso = parseFloat(peso)
+
+			
+			var altura = centimetros / 100
+			
+
+			var M = peso / (altura * altura)
+
+			
+			var c = ''
+
+			if(M < 16){
+				  c = 'Baixo peso muito grave '
+			} else if(M >= 16 && M<= 16.99){
+				  c = 'Baixo peso grave '
+			} else if(M >= 17 && M <= 18.49){
+				  c = 'Baixo peso'
+			}  else if (M >= 18.50 && M <= 24.99){
+				  c = 'Peso normal '
+			}  else if(M >=25 && M <= 29.99){
+				  c = 'Sobrepeso'
+			}  else if(M >=30 && M <= 34.99){
+				  c = 'Obesidade grau 1 '
+			}  else if(M >=35 && M <= 39.99){
+				  c = 'Obesidade grau 2'
+			}  else if(M >= 40){
+				  c = 'Obesidade grau 3'
+			}
+
+			alert(nome + ' Possui um indice de massa corporal igual a : '+ parseInt(M) + ' ,sendo classificado como : '+ c)
+			
+			
+
+			
+
+		</script>
+		
+	</body>
+	</html>

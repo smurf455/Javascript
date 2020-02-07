@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Funções callback</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//função com a implementação da lógica
+			function exibirArtigo(id, callbackSucesso, callbackErro){
+				if(true){
+					callbackSucesso('Essa é uma função de Sucesso JS')
+				} else{
+					callbackErro('erro ao procesar a aplicação')
+				}
+			}
+			
+			var callbackSucesso = function(nome, descrição){
+				document.write('</p> ' +nome + ' olha só </p>')
+				document.write('<hr>')
+				document.write('<p> '+ descricao + ' </p>')
+			}
+
+			var callbackErro = function(erro){
+				document.write(erro + ' solicitação invalida')
+			}
+
+			exibirArtigo(1, callbackSucesso, callbackErro)
+
+		</script>
+	</body>
+	</html>

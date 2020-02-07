@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Manipulando valores de inputs</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+			function pickValue(){
+				//selecionar valor digitado
+				var caracter = document.getElementById('valor1').value
+
+				//limpar campo de digitação
+
+				document.getElementById('valor1').value = ''
+				
+				caracter.trim()
+
+				switch(caracter){
+					case '0':
+					case '1':
+					case '2':
+					case '3':
+					case '4':
+					case '5':
+					case '6':
+					case '7':
+					case '8':
+					case '9':
+					//adicionar o caracter ao campo numero
+					document.getElementById('Somente_numeros').value += caracter
+					break;
+
+					default: document.getElementById('Somente_letras').value += caracter
+				}	
+			}
+
+		</script>
+
+	</head>
+
+
+	<body>
+		<input 
+		id="valor1" 
+		type="text" 
+		placeholder="Digite um caracter"
+		onkeyup="pickValue()">
+
+		<hr>
+		<span>Letras</span>
+		<input type="text" disabled="disabled" id="Somente_letras">
+
+		<hr>
+
+		<span>Números</span>
+		<input type="text" disabled="disabled" id="Somente_numeros">
+
+	</body>
+	</html>

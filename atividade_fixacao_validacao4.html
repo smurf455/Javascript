@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Atividade de fixação validação</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+
+			.estilo1{
+				background: red;
+			}
+
+			.estilo2{
+				background: green;
+			}
+
+			.estiloPadrao{
+				background: yellow;
+			}
+
+
+		</style>
+
+		<script type="text/javascript">
+			//função que caso o input esteja focado define a cor como amarela
+			function Focus(){
+				document.getElementById('campo_texto').className = 'estiloPadrao'
+			}
+
+			function Unfocus(){
+				var valor = document.getElementById('campo_texto').value
+	 			var teste =	valor.length
+				switch(teste){
+					case 0:
+					case 1:
+					case 2:
+					document.getElementById('campo_texto').className = 'estilo1'
+					break;
+
+					default: document.getElementById('campo_texto').className = 'estilo2'
+				}
+			}
+
+
+		</script>
+	</head>
+
+
+	<body>
+		<input onfocus="Focus()" onblur="Unfocus()" type="text" id="campo_texto" placeholder="Digite sua senha">	
+	</body>
+
+	
+	</html>

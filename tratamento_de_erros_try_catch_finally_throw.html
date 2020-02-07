@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Tratamento de erros try, catch, finally e throw</title>
+		<meta charset="utf-8">
+	</head>
+
+
+	<body>
+		<script>
+			//netflix
+
+			var video = Array()
+
+			video[1] = Array()
+			video[1] ['nome'] = 'Bleach'
+			video[1] ['Categoria'] = 'Anime'
+
+			function getVideo(){
+				try{
+				//lógica
+				//http
+				console.log(video[0]['nome'])
+
+			}	catch(erro){
+				tratarErro()
+				console.log('Agora sim nós podemos tratar o erro')
+
+			} finally{
+				console.log('Sempre passo por aqui try / catch')
+			}  
+
+				console.log('A aplicação não morreu')
+			}
+
+				function tratarErro(erro){
+					//lógica
+				}
+			getVideo(video)	
+		</script>
+	</body>
+	</html>

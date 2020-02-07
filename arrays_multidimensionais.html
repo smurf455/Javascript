@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>array multidimensional</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			//array principal
+			var itens = Array()
+
+			//subArrays tratando diferentes valores e podendo ser acessados pelo array principal
+			itens['Frutas'] = Array('Morango', 'Abacate', 'Kiwi','Tangerina')
+
+			itens['Clientes'] = []
+
+			itens['Clientes']['a'] = 'BrunoGay'
+			itens['Clientes']['b'] = 'BrunoViado'
+			itens['Clientes']['c'] = 'BrunoTraveco'
+
+			document.write(itens['Clientes']['c'])
+
+		</script>
+	</body>
+	</html>

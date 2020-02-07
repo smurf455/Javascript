@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bom screen</title>
+		<meta charset="utf-8">
+
+	</head>
+
+
+
+	<body>
+		<script>
+			//recuperação das dimensões do navegador
+			var height = window.screen.availHeight
+			var width = window.screen.availWidth	
+
+			document.write('A altura é ' + height + '<br />')
+			document.write('A largura é ' + width + ' ')
+
+			if(width < 500){
+				document.write(' Uso de dispositivo móvel ')
+			} else {
+				document.write('Uso de dispositivo web ')
+			}
+		</script>
+	</body>
+	</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Funções de data</title>
+		<meta charset="utf-8">
+	</head>
+
+
+	<body>
+		<script type="text/javascript">
+			
+			var data = new Date()
+			//document.write(data.getDate() +'/' + (data.getMonth() +1) + '/' + data.getFullYear())
+			//adicionar ou remover data
+			/*
+			document.write(data.toString())
+			data.setDate(data.getDate() + 1)
+			document.write('<hr>')
+			document.write(data)
+
+			document.write('<br>')
+			document.write('<hr>')
+
+
+			//adicionar ou remover mês
+			document.write(data.toString())
+			data.setMonth(data.getMonth() + 1)
+			document.write('<hr>')
+			document.write(data)
+
+			document.write('<br>')
+			document.write('<hr>')
+
+			//adicionar ou remover ano
+			document.write(data.toString())
+			data.setFullYear(data.getFullYear() + 1)
+			document.write('<hr>')
+			document.write(data)
+			*/
+
+			var data1 = new Date(2014, 2 , 23)
+
+			var data2 = new Date(2016, 5 , 2)
+
+
+			document.write(data1.toString())
+			document.write('<hr>')
+			document.write(data2.toString())
+
+			//primeiro passo para manipulação de datas é converter as datas para algo que possamos calcular
+
+			document.write('<hr>')
+
+			document.write(data1.getTime())
+
+			document.write('<hr>')
+
+			document.write(data2.getTime())
+
+			//Segundo passo encontrar a diferença de milisegundos entre a data 1 e a data 2
+			document.write('<br> <hr> <br>')
+			var quantidade_dias_entre_datas = (Math.abs(data1.getTime() - data2.getTime()) )
+			document.write(quantidade_dias_entre_datas)
+
+			var milisegundos_em_um_dia = (1*24*60*60*1000)
+			// Um dia tem 24 horas, uma hora tem 60 minutos, 1 minuto tem 60 segundos e cada segundo tem 1000 milisegundos, então quantos milisegundos existem em um dia
+			document.write('<br> <hr> <br>')
+			document.write('Um dia tem: ' + milisegundos_em_um_dia + ' milisegundos')
+
+			document.write('<br> <hr> <br>')
+
+			document.write('A diferença entre a data1 e a data2 é de '+ Math.round(quantidade_dias_entre_datas / milisegundos_em_um_dia) +' dias')
+
+
+
+		</script>
+		</script>
+	</body>
+</html>

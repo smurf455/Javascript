@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Selecionando elementos</title>
+	</head>
+	<body>
+		<div>
+			<input
+			placeholder="Digite seu nome"
+			id="nome_usuario"
+			class="campo_texto"
+			name="nome" >
+		</div>
+
+		<script type="text/javascript">
+			//Pega os elementos pelo ID
+			 console.log(document.getElementById('nome_usuario'))
+			//Pega os elementos baseadas na tag 
+			console.log(document.getElementByTagName('input'))
+			//Pega os elementos baseados no nome 
+			console.log(document.getElementsByName('nome'))
+			//Pega os elementos baseados na class 
+			console.log(document.getElementsByClassName('campo_texto'))
+
+		</script>
+
+	</body>
+	</html>

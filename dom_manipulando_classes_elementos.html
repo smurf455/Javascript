@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Manipulando classes de elementos</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+		.estilo1{
+			background: blue;
+			color:white;
+			padding: 5px;
+		}
+
+		.estilo2{
+			background: black;
+			color:yellow;
+			padding: 20px;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		
+		function changeClass(){
+			document.getElementById('principal').className = 'estilo2'
+		}
+
+		function changeClass2(){
+			document.getElementById('principal').className = 'estilo1'
+		}
+	</script>
+	</head>
+
+	
+
+
+	<body>
+		<div id="principal" class="estilo1">Isso é uma demostração</div>
+		<br>
+		<button type="button" onclick="changeClass()">Mudar para classe 2</button>
+		<button type="button" onclick="changeClass2()">Voltar para classe 1</button>
+	</body>
+	</html>

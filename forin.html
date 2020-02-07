@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forin </title>
+		<meta charset="utf-8">
+	</head>
+
+
+	<body>
+		<script>
+			var itens = Array()
+			itens[0] = 'Cabeça de geleia'
+			itens['oito'] = 'vagalume'
+			itens[355] = 'tubarão'
+			itens['quatro'] = 'gengibre'
+
+			for(var x in itens){
+				document.write(' na posição ' + x + ' temos ' + itens[x] + '<br />')
+			}
+		</script>
+	</body>
+	</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Operadores condicionais</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            var nota = prompt('Digite a sua nota')
+            var qtfaltas = prompt('Digite a quantidade de faltas')
+
+            var media = 7
+            var faltas = 15
+
+            //utilizando if e o else temos mais controle sobre condições
+            /*
+            if(nota >= media && qtfaltas <= faltas){
+                document.write (    'Aluno aprovado')
+            } else{
+                document.write('Aluno reprovado')
+            }*/
+
+            //utilizar Operadores ternários é uma forma mais enxuta de criar condições, pórem com menos flexibilidade
+
+            var  resultado = (nota >= media && qtfaltas <= faltas) ? 'Passo disgraça' : 'Te vejo na próxima'
+            document.write(resultado)
+
+        </script>
+
+
+
+    </body>
+</html>

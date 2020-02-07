@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Atividade de fixação 5</title>
+		<meta charset="utf-8">
+	</head>
+
+
+
+	<body>
+		<div>
+			<input id="valorInput" type="text" name="">
+			<button onclick="recuperaTexto()">Adicionar</button>
+			<button onclick="console.log(objetos.sort())">Ordenar</button>
+		</div>
+
+		<script>
+			//Criação do array
+			var objetos = Array()
+
+			objetos[0] = 'Cadeira'
+			objetos[1] = 'impressora'
+			objetos[2] = 'Garfo'
+			//
+			
+			
+
+			function recuperaTexto(){
+				var valor = document.getElementById('valorInput').value
+				console.log(valor)
+				
+			
+				if(valor === ''){
+					alert('Informe um valor valido')
+
+				}else if(objetos.indexOf(valor) != -1){
+					alert('Objeto já existe')
+
+				}else if(objetos.indexOf(valor) === -1){
+					objetos.push(valor)
+					console.log(objetos)  
+					document.getElementById('valorInput').value = ''
+					alert('Objeto adicionado')	
+				} 
+
+				
+			}
+
+
+		</script>
+		
+	</body>
+	</html>

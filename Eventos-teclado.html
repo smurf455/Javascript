@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Eventos do teclado</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script type="text/javascript">
+			function acao(){
+				alert('Falou comigo ')
+			}
+		</script>
+
+
+
+		<div >
+				<!--Realiza uma ação quando uma tecla é pressionada-->
+			 <input onkeydown="acao()" type="text" >
+
+			 <!--Realiza uma ação quando uma tecla é pressionada, pórem apenas caracteres-->
+			 <input onkeypress="acao()" type="text" >
+
+			 <!--Realiza uma ação quando uma tecla é liberada, ou seja primeiro exibe a tecla e depois realiza uma ação-->
+			 <input onkeyup="acao()" type="text" >
+		</div>
+	</body>
+	</html>

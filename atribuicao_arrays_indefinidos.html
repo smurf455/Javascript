@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Atribuicao de valores a array com tamanho indefinido</title>
+		<meta charset="utf-8">
+	</head>
+
+
+	<body>
+		<script>
+			function soma(){
+				var resultado = 0
+				for(var i in arguments)
+					//console.log(arguments[i]) verifica cada item em cada posição
+					resultado += arguments[i] //concatena a variavel resultado os valores de cada índice passado
+
+					return resultado
+			}
+
+			console.log(soma(7,5,8,4 ,'teste'))
+		</script>
+	</body>
+	</html>

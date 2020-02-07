@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calcular valores por input</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// Primeiro passo pegar os dados informados pelo usuario
+			var valor1 = prompt('Digite o primeiro numero')
+			var operacao = prompt('Digite a operação, Ex: Soma ou Subtração!')
+			var valor2 = prompt('Digite o segundo numero')
+
+			//Segundo passo converter os valores recuperados
+			valor1 = parseFloat(valor1)
+			valor2 = parseFloat(valor2)
+
+			//criação de uma variavel para receber o valor da operação
+
+			var resultado
+
+			//Criação da logica para realização da operação
+			
+				if(operacao == 'Soma'){
+				resultado = (valor1 + valor2)
+			} else if(operacao == 'Subtração'){
+				resultado = (valor1 - valor2)
+			} else if(operacao == 'Multiplicação'){
+				resultado = (valor1 * valor2)
+			} else if (operacao == 'Divisão'){
+				resultado = (valor1 / valor2)
+			}
+			else{
+				resultado = ('Digite uma operação valida')
+			}	
+			
+			
+
+			// Retorno da variavel resultado com concatenação final
+			document.write('O resultado da operação é: ' + resultado)
+
+
+
+
+		</script>
+	</body>
+	</html>
